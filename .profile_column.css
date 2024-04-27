@@ -1,0 +1,71 @@
+.profile_column
+{
+  animation: rotation 1s ease-out alternate infinite;
+}
+
+.game_cell:hover
+{
+    animation: scaling 0.4s ease-out alternate infinite;
+    background-color:black;
+}
+
+.svgicon 
+{
+    animation: spin 10s infinite;
+}
+
+.game_cell
+{
+    animation: rotation 0.4s ease-out alternate infinite;
+    background-color:black;
+}
+
+.game_grid_widget
+{
+    animation: floating 2s ease-in alternate infinite;
+}
+
+.inner_column
+{
+    animation: floating 2s ease-in alternate infinite;
+}
+
+.collection_row
+{
+    animation: rotation 1s ease-out alternate infinite;
+}
+
+@keyframes scaling 
+{
+    0% { transform: scale(1);} 
+    100% { transform: scale(1.03);}
+}
+
+@keyframes spin 
+{
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@keyframes floating 
+{
+    0%{ transform: translate(0,  0px);}
+    50% { transform: translate(0, 7px);} 
+    100% { transform: translate(0, -0px);}
+}
+
+@keyframes rotation 
+{
+  0% { transform: rotate(-.6deg);} 
+  100% { transform: rotate(.6deg);}
+}
+
+@keyframes colorloop 
+{
+    0% { background-color: #FF00FF; }
+    20% { background-color: #FF99FF; }
+    40% { background-color: #CC00FF; }
+    60% { background-color: #CC99FF; }
+    80% { background-color: #9900FF; }
+    100% { background-color: #FF00FF; }
+}
